@@ -16,7 +16,7 @@ if (document.readyState !== "loading") {
 
 function initializeCode() {
   console.log("Initializing");
-  const table = document.getElementById("table");
+  const table = document.getElementById("board");
   table.addEventListener("mousedown", (event) => {
     boxclicked(event);
     event.stopPropagation();
@@ -46,7 +46,7 @@ function boxclicked(event) {
 }
 
 function checkwin() {
-  const table = document.getElementById("table");
+  const table = document.getElementById("board");
   var row,
     rows = table.rows;
   var cells;
